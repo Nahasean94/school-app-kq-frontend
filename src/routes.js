@@ -34,7 +34,7 @@ export default () => {
                         <Route exact path="/classes" component={requireTeacherAuth(Classes)}/>
                         <Route exact path="/menus" component={requireAdminAuth(Menus)}/>
                         <Route exact path="/roles" component={requireAdminAuth(Roles)}/>
-                            <Route  component={requireAdminAuth(PageNotFound)}/>
+                            <Route  component={PageNotFound}/>
                     </Switch>
                 </App>
             </div>
