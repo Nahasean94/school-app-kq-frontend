@@ -6,7 +6,8 @@ import {applyMiddleware, compose, createStore} from 'redux'
 import thunk from 'redux-thunk'
 import rootReducer from './rootReducer'
 import {Provider} from 'react-redux'
-import {setCurrentUser} from './actions/loginActions'
+import {setCurrent
+    User} from './actions/loginActions'
 import jwt from 'jsonwebtoken'
 import registerServiceWorker from './registerServiceWorker'
 

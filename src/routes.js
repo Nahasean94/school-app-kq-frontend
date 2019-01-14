@@ -15,6 +15,7 @@ import Menus from './components/pages/Menus'
 import requireAdminAuth from './utils/requireAdminAuth'
 import Roles from './components/pages/Roles'
 import Subjects from './components/pages/Subjects'
+import PageNotFound from './components/pages/PageNotFound'
 
 
 export default () => {
@@ -33,6 +34,7 @@ export default () => {
                         <Route exact path="/classes" component={requireTeacherAuth(Classes)}/>
                         <Route exact path="/menus" component={requireAdminAuth(Menus)}/>
                         <Route exact path="/roles" component={requireAdminAuth(Roles)}/>
+                            <Route  component={requireAdminAuth(PageNotFound)}/>
                     </Switch>
                 </App>
             </div>
