@@ -28,7 +28,7 @@ export default () => {
                         <Route exact path="/signup" component={SignupPage}/>
                         <Route exact path="/login" component={LoginPage}/>
                         <Route exact path="/students" component={requireLogin(Students)}/>
-                        <Route exact path="/teachers" component={requireLogin(Teachers)}/>
+                        <Route exact path="/teachers" component={requireAdminLogin(Teachers)}/>
                         <Route exact path="/kcpe" component={requireStudentAuth(KCPE)}/>
                         <Route exact path="/subjects" component={requireStudentAuth(Subjects)}/>
                         <Route exact path="/classes" component={requireTeacherAuth(Classes)}/>
